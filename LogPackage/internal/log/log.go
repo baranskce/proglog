@@ -11,7 +11,7 @@ import (
 	"strings"
 	"sync"
 
-	api "github.com/baranskce/proglog/StructWProtobuf/api/v1"
+	api "github.com/baranskce/proglog/api/v1"
 )
 
 type Log struct {
