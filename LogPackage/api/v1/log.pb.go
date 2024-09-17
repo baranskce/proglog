@@ -5,8 +5,7 @@ package v1
 
 import (
 	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protoreflect"
+	proto "google.golang.org/protobuf/proto"
 	math "math"
 )
 
@@ -19,7 +18,7 @@ var _ = math.Inf
 // is compatible with the proto package it is being compiled against.
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
+// please upgrade the proto package
 
 type Record struct {
 	Value                []byte   `protobuf:"bytes,1,opt,name=value,proto3" json:"value,omitempty"`
@@ -27,11 +26,6 @@ type Record struct {
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
 	XXX_unrecognized     []byte   `json:"-"`
 	XXX_sizecache        int32    `json:"-"`
-}
-
-// ProtoReflect implements protoreflect.ProtoMessage.
-func (m *Record) ProtoReflect() protoreflect.Message {
-	panic("unimplemented")
 }
 
 func (m *Record) Reset()         { *m = Record{} }

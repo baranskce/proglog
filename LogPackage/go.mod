@@ -3,7 +3,6 @@ module github.com/baranskce/proglog
 go 1.20
 
 require (
-	github.com/golang/protobuf v1.5.0
 	github.com/stretchr/testify v1.9.0
 	github.com/tysonmote/gommap v0.0.3
 	google.golang.org/protobuf v1.34.2
